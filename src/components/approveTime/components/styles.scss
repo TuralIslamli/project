@@ -1,0 +1,15 @@
+.searchInputUserList {
+    padding: 15px 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid;
+    border-color: silver;
+    width: 100%;
+    transition: 0.1s all ease;
+}
+
+.searchInputUserList:hover {
+  border: 1px solid #000;
+}
+

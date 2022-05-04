@@ -1,0 +1,1 @@
+export const getAddTimeData = state => state.addTimeReducer.data;

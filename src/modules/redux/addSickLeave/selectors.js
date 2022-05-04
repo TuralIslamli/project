@@ -1,0 +1,1 @@
+export const getAddSickLeaveData = state => state.addSickLeaveReducer.data;

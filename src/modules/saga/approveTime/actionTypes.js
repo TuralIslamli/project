@@ -1,0 +1,4 @@
+export const ActionTypes = {
+    SET_GET_TIMES: 'SET_GET_TIMES',
+    SET_APPROVE_DECLINE_TIME: 'SET_APPROVE_DECLINE_TIME'
+};

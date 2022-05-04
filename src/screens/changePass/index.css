@@ -1,0 +1,45 @@
+.mainContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  max-width: 100vw;
+  background-image: url("../../assets/svg/background.svg"), -webkit-gradient(linear, left top, right top, from(#193296), to(#320064));
+  background-image: url("../../assets/svg/background.svg"), linear-gradient(to right, #193296, #320064);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mainContainer .formContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 40%;
+  max-width: 80%;
+}
+
+@media screen and (min-width: 200px) and (max-width: 450px) {
+  .mainContainer .formContainer {
+    max-width: 50%;
+  }
+}

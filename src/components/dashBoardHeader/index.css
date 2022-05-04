@@ -1,0 +1,39 @@
+.dashboardHeaderContainer {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 25px 0;
+}
+
+.remainInfo{
+  color: #320064;
+  font-size: 16px;
+  font-weight: 400;
+  border: 1px solid #320064;;
+  padding: 10px;
+  border-radius: 5%;
+  margin: 10px 8px 10px 0;
+}
+
+@media screen and (min-width: 200px) and (max-width: 830px) {
+  .dashboardHeaderContainer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+.dashboardHeaderContainer .autoTemp {
+  color: #fff;
+  border-color: #fff;
+}
+
+.redLine {
+  color: red;
+  margin-right: 5px;
+}
+
+.greenLine {
+  color: green;
+}

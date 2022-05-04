@@ -1,0 +1,13 @@
+export const getDateInfo = state => state.applicationInfoReducer.date;
+export const getYear = state => state.applicationInfoReducer.year;
+export const getMonth = state => state.applicationInfoReducer.month;
+export const getRoles = state => state.applicationInfoReducer.roles;
+export const getGenders = state => state.applicationInfoReducer.genders;
+export const getReasons = state => state.applicationInfoReducer.reasons;
+export const getStatuses = state => state.applicationInfoReducer.statuses;
+export const getTimeType = state => state.applicationInfoReducer.timeType;
+export const getDepartments = state => state.applicationInfoReducer.departments;
+export const getApprovedStatuses = state => state.applicationInfoReducer.approveStatuses;
+export const getSnackbar = state => state.applicationInfoReducer.snackbar;
+export const getAccListControl = state => state.applicationInfoReducer.accListControl;
+export const getDateType = state => state.applicationInfoReducer.dateType;

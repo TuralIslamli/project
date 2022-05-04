@@ -1,0 +1,13 @@
+@import "../../services/globalStyles/variables.scss";
+@import "../../services/globalStyles/mixins.scss";
+
+
+.linkButton {
+    background-color: red;
+}
+
+@media screen and (max-width: 700px){
+    .linkButton {
+        margin: 20px;
+    }
+}

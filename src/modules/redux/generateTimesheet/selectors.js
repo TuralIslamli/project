@@ -1,0 +1,1 @@
+export const getGlobalTimesheetData = state => state.generateTimesheetReducer.data;

@@ -1,0 +1,1 @@
+export const getAddShortHolidayData = state => state.addShortHolidayReducer.data;

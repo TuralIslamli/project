@@ -1,0 +1,19 @@
+@import './services/globalStyles/mixins.scss';
+@import './services/globalStyles/variables.scss';
+@import './services/globalStyles/fonts.scss';
+
+
+* {
+    font-family: Montserrat;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.MuiCalendarPicker-viewTransitionContainer {
+    display: flex !important;
+    justify-content: center;
+    padding-bottom: 5px;
+}

@@ -1,0 +1,19 @@
+@import "../../services/globalStyles/variables.scss";
+@import "../../services/globalStyles/mixins.scss";
+
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $headerVioletColor;
+  width: 100%;
+  min-height: 100px;
+  padding: 0 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1100;
+
+  @include mediaMixin($maxSize: 960px) {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,11 @@
+.dashboardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    max-width: 100vw;
+    background-image: url('../../assets/svg/dashboardBack.svg'), linear-gradient(to bottom, #5876ee, #883bd4);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+}

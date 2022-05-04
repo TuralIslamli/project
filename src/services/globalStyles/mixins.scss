@@ -1,0 +1,58 @@
+@import './variables.scss';
+
+// В миксине flex, вы будете менять по задаче (flex-direction, justify-content, flex-wrap) значения на те которые вам требуются в вашей задаче. 
+@mixin flex($dir: row, $justify: flex-start, $wrap: nowrap){
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $justify;
+    align-items: center;
+    flex-wrap: $wrap;
+}
+
+// Миксин button - как шаблон, вы будете менять (color, background-color, border-color).
+@mixin buttonDesign($fontcolor: #fff, $bgcolor: $aquagreen, $bordercolor: transparent){
+    color: $fontcolor;
+    background-color: $bgcolor;
+    border: 0px solid $bordercolor;
+    border-radius: 4px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: $fontthirtysix;
+    font-weight: $fontbold;
+    transition: .3s all ease-in;
+    cursor: pointer;
+}
+
+// Миксин input - также будет использоваться как шаблон на странице АВТОРИЗАЦИИ и ИЗМЕНЕНИИ ПАРОЛЯ, к остальным input-aм не относится. будете менять значения (color, font-weight, background-color).
+@mixin inputDesign($fontcolor: $darkgrey, $fontweight: $fonttwentyfour, $bgcolor: $white){
+    color: $fontcolor;
+    font-weight: $fontweight;
+    border-radius: 5px;
+    padding: 0 0;
+    text-align: center;
+    outline: none;
+}
+
+@mixin timesheetDesign($bgcolor: $white, $fontcolor: $white){
+    background-color: $bgcolor;
+    color: $fontcolor;
+}
+
+@mixin mediaMixin($minSize: 200px, $maxSize: 2000px) {
+    @media screen and (min-width: $minSize) and (max-width: $maxSize) {
+        @content;
+    }
+}
+
+// Module CSS, вы будете создавать css file не как обычно 
+// например (styles.css), а styles.module.css, также придется 
+// импортировать из этого же файла style и когда будете прописывать className,
+// сделаете по следующей схеме className={style.вашСтиль}. 
+
+//import style from './Button.module.css'; // Import css modules stylesheet as styles
+
+//const Button = () => {
+  //render() {
+    //return <button className={style.error}>Error Button</button>;
+  //}

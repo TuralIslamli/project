@@ -1,0 +1,24 @@
+.lists{
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+  min-width: 300px;
+}
+.searchInput {
+  padding: 15px 15px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #c4c4c4;
+  outline: none;
+}
+
+.timeSheetItemButton {
+  display: flex;
+  align-self: flex-start;
+  margin-top: 11px;
+}
+
+.no_timesheet{
+  margin-top: 50px;
+  font-size: 25px;
+}
